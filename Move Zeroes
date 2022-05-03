@@ -1,0 +1,26 @@
+// 4th May
+class Solution {
+    public void moveZeroes(int[] arr) {
+        int n = arr.length;
+        int i = 0, j = 0;
+        while (j < n){
+            if (arr[i] == 0 && arr[j] != 0){
+                // Swap
+                int temp = arr[i];
+                arr[i] = arr[j];
+                arr[j] = temp;
+                i++;
+            }
+            else if (arr[i] == 0 && arr[j] == 0){
+                j++;
+            }
+            else if (arr[i] != 0 && arr[j] != 0){
+                i++;
+                j++;
+            }
+            else if (arr[i] != 0 && arr[j] == 0){
+                i++;
+            }
+        }
+    }
+}
