@@ -1,0 +1,15 @@
+// Remove Duplicates from Sorted Array
+class Solution {
+    public int removeDuplicates(int[] arr) {
+        int n = arr.length;
+        int i = 0, j = 1;
+        while (j < n){
+            if (arr[j] != arr[j - 1]){
+                arr[++i] = arr[j];
+            }
+            
+            j++;
+        }
+        return i + 1;
+    }
+}
