@@ -1,4 +1,5 @@
 // My Leetcode Solution
+// Solved On: 3rd May, 2022
 class Solution {
     public int findDuplicate(int[] arr) {
         int n = arr.length;
